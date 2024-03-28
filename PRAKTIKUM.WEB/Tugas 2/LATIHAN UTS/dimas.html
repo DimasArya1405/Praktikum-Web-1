@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ff:hover{
+            background-color: red;
+        }
+        .border{
+            border-color: green;
+        }
+        .text{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color:blue;
+        }
+        .bck{
+            background-color: aqua;
+        }
+        .bcky{
+            background-color: yellow;
+        }
+        .bckp{
+            background-color: purple;
+        }
+    </style>
+
+<script>
+    function java(){
+        let text = ""; 
+for (let i = 0; i < 5; i++) {
+text += "Nama saya" + i + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+    }
+
+    function javas(){
+
+document.getElementById("demo").innerHTML = "";
+    }
+
+</script>
+
+</head>
+<body>
+    
+    <h1><b>FAHM1 </b></h1><HR>
+    <h2>Web by Dimz</h2>
+    <ol type="i">
+        <LI>Jurusan PNC</LI>
+        <ol type="1">
+            <li>Komputer dan Bisnis</li>
+            <li>Pertanian</li>
+            <li>Perikanan</li>
+            <li>Listrik</li>
+        </ol>
+        <li>Dosen PNC</li>
+        <ul>
+            <li>Pak Wahyu</li>
+            <li>Pak Abda'u</li>
+            <li>Pak Anton</li>
+            <li>Bu Laura</li>
+            <li>Bu Anisa</li>
+        </ul>
+    </ol>
+
+    <table class="bck" border="2px" cellspacing="0" >
+        <tr>
+          <th><b>Foto</b></th>
+          <th>Info</th>
+        </tr>
+        <tr>
+          <td style= "width:20px"rowspan="5"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUcb7MjZMYjrOHa6Pz-6o6OOu8iJvfH8LPTA&usqp=CAU" style="width:auto"></td>
+          <td class="bcky">Gambar ini diambil dari google</td>
+        </tr>
+        <tr>
+          <td >Lahir pada 1 April 2005</td>
+        </tr>
+        <tr>
+          <td class="bckp" >Hobi tidur</td>
+        </tr>
+    </table>
+    <p>
+        Ganti Warna Background tabel:
+    </p>
+    
+    
+    
+    <hr><br>
+    <table class="border" border="1px" cellspacing="0" >
+        <tr class="text">
+          <th><b>Foto</b></th>
+          <th>Info</th>
+        </tr>
+        <tr>
+          <td style= "width:20px"rowspan="5"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUcb7MjZMYjrOHa6Pz-6o6OOu8iJvfH8LPTA&usqp=CAU" style="width:auto"></td>
+          <td class="ff">Gambar ini diambil dari google</td>
+        </tr>
+        <tr>
+          <td class="ff" >Lahir pada 1 April 2005</td>
+        </tr>
+        <tr>
+          <td class="ff" >Hobi tidur</td>
+        </tr>
+    </table>
+    <p id="demo"></p>
+ 
+  
+<button type="button" onclick="java()" >Tampil</button>
+<button type="button" onclick="javas()" >Hapus</button><hr><br>
+ <a href="next.html">Majuu</a>
+</body>
+</html>
